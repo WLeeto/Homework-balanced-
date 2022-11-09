@@ -44,6 +44,9 @@ def is_balanced(string):
     index = 0
     balanced = True
 
+    if len(string) % 2 != 0:
+        return "Несбалансировано"
+
     while index < len(string) and balanced:
         element = string[index]
         if element in "([{":
